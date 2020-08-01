@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#brand-title {
+    font-weight: bolder !important;
+    font-size: 4rem;
+}
+
+.navbar {
+    background-color: rgb(48, 19, 5);
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+    overflow: hidden;
+}
+
+.nav-link:hover {
+    text-decoration: underline #E93535 !important;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.jumbotron {
+    height: auto;
+    background-color: rgb(236, 239, 230);
+}
+
+#logo {
+    height: 20vh;
+    display: block;
+    margin: auto;
+}
+
+#logo:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#logo {
+    overflow: hidden;
+}
+
+#second-navbar {
+    background-color: rgb(73, 107, 74);
+}
+
+.contenido {
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+#hamburgueso {
+    color: white;
+}
+
+#hamburgueso2 {
+    color: white;
+}
