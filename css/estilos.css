@@ -1,3 +1,5 @@
+/* CSS GENERAL */
+
 body {
     font-family: 'Roboto Mono', monospace;
 }
@@ -7,17 +9,24 @@ body {
     font-size: 4rem;
 }
 
+#brand-subtitle {
+    font-size: 2rem;
+}
+
 .navbar {
     background-color: rgb(48, 19, 5);
 }
 
 .navbar-brand {
-    color: white !important;
+    color: rgb(236, 239, 230) !important;
 }
 
 .nav-link {
-    color: white !important;
+    color: rgb(236, 239, 230) !important;
     overflow: hidden;
+    -webkit-transition: all 0.30s ease;
+    -o-transition: all 0.30s ease;
+    transition: all 0.30s ease;
 }
 
 .nav-link:hover {
@@ -32,9 +41,12 @@ body {
 }
 
 #logo {
-    height: 20vh;
+    height: 25vh;
     display: block;
     margin: auto;
+    -webkit-transition: all 0.30s ease;
+    -o-transition: all 0.30s ease;
+    transition: all 0.30s ease;
 }
 
 #logo:hover {
@@ -47,18 +59,58 @@ body {
 }
 
 #second-navbar {
-    background-color: rgb(73, 107, 74);
+    background-color: #496B4A;
 }
 
 .contenido {
+    padding: 15px;
     margin-top: 2rem;
-    text-align: justify;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(236, 239, 230);
+    overflow: hidden;
+    -webkit-transition: all 0.30s ease;
+    -o-transition: all 0.30s ease;
+    transition: all 0.30s ease;
+}
+
+.contenido:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #hamburgueso {
-    color: white;
+    color: rgb(236, 239, 230);
 }
 
 #hamburgueso2 {
-    color: white;
+    color: rgb(236, 239, 230);
+}
+
+.servicios {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid 1px rgb(236, 239, 230);
+    overflow: hidden;
+    background-color: rgb(236, 239, 230);
+    -webkit-transition: all 0.30s ease;
+    -o-transition: all 0.30s ease;
+    transition: all 0.30s ease;
+}
+
+.servicios:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.servi-text {
+    padding-top: 10px;
+    text-align: left !important;
+}
+
+.servi-icon {
+    font-size: 5rem;
 }
