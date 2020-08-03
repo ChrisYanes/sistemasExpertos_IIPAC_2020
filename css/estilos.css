@@ -62,12 +62,18 @@ body {
     background-color: #496B4A;
 }
 
+#footer {
+    color: rgb(236, 239, 230);
+    background-color: rgb(48, 19, 5);
+}
+
 .contenido {
-    padding: 15px;
+    padding: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2rem;
+    border-radius: 10px;
     background-color: rgb(236, 239, 230);
     overflow: hidden;
     -webkit-transition: all 0.30s ease;
@@ -88,12 +94,14 @@ body {
     color: rgb(236, 239, 230);
 }
 
-.servicios {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.servicios,
+.tarifas {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding-top: 15px;
     padding-bottom: 15px;
     border: solid 1px rgb(236, 239, 230);
+    border-radius: 10px;
     overflow: hidden;
     background-color: rgb(236, 239, 230);
     -webkit-transition: all 0.30s ease;
@@ -101,16 +109,31 @@ body {
     transition: all 0.30s ease;
 }
 
-.servicios:hover {
+.servicios:hover,
+.tarifas:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.servi-text {
+.servi-text,
+.tarifa-text {
     padding-top: 10px;
-    text-align: left !important;
+    text-align: justify !important;
 }
 
-.servi-icon {
+.servi-icon,
+.tarifa-icon {
     font-size: 5rem;
+}
+
+.p-learn,
+.p-inicio {
+    text-align: justify;
+}
+
+.h3-learn,
+.h3-tarifas,
+.h3-servicios {
+    font-weight: bolder;
+    font-size: 2rem;
 }
