@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2ae56fef5f.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+        }
+        
+        .navbar-light {
+            background-color: #496B4A !important;
+            border-bottom: rgb(192, 190, 190) solid 2px;
+        }
+        
+        #search-bar {
+            width: 70% !important;
+            margin-right: 8rem;
+        }
+        
+        .logo,
+        #logo-icon {
+            height: auto;
+            width: 50px !important;
+            /* float: right; */
+        }
+        
+        #question-icon {
+            color: rgb(236, 239, 230);
+            float: right;
+            font-size: 1.5rem;
+            overflow: hidden;
+            -webkit-transition: all 0.30s ease;
+            -o-transition: all 0.30s ease;
+            transition: all 0.30s ease;
+        }
+        
+        #question-icon:hover {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+        
+        #settings-icon {
+            color: rgb(236, 239, 230);
+            float: right;
+            font-size: 1.5rem;
+            overflow: hidden;
+            -webkit-transition: all 0.30s ease;
+            -o-transition: all 0.30s ease;
+            transition: all 0.30s ease;
+        }
+        
+        #settings-icon:hover {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+        
+        #gallery-icon {
+            color: rgb(236, 239, 230);
+            float: right;
+            font-size: 1.5rem;
+            overflow: hidden;
+            -webkit-transition: all 0.30s ease;
+            -o-transition: all 0.30s ease;
+            transition: all 0.30s ease;
+        }
+        
+        #gallery-icon:hover {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+        
+        #user-icon {
+            color: rgb(236, 239, 230);
+            float: right;
+            font-size: 1.5rem;
+            overflow: hidden;
+            -webkit-transition: all 0.30s ease;
+            -o-transition: all 0.30s ease;
+            transition: all 0.30s ease;
+        }
+        
+        #user-icon:hover {
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+        
+        #sidebarMenu {
+            border-right: rgb(192, 190, 190) solid 2px !important;
+            height: 100vh !important;
+        }
+        
+        .plus-icon {
+            font-size: 2rem;
+            text-align: left;
+        }
+        
+        #nuevo-boton {
+            width: 80%;
+            background-color: white;
+            color: black;
+            font-size: 1.5rem;
+            font-weight: 600;
+            border: rgb(192, 190, 190) solid 1px;
+            border-radius: 40px !important;
+            padding-left: 15px !important;
+            padding-right: 25px !important;
+        }
+        
+        .menu-item {
+            color: black !important;
+            overflow: hidden;
+            -webkit-transition: all 0.30s ease;
+            -o-transition: all 0.30s ease;
+            transition: all 0.30s ease;
+        }
+        
+        .menu-item:hover {
+            text-decoration: underline #E93535 !important;
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light  flex-md-nowrap p-1 shadow">
+        <a class="navbar-brand logo col-md-3 col-lg-2 mr-0 px-3" href="#"><img class="mr-2" id="logo-icon" src="img/logo.png" alt="">DEVIACAT</a>
+        <input id="search-bar" class="form-control mb-2" type="text" placeholder="Search">
+        <a href=""><i id="question-icon" class="fas fa-question-circle mx-2"></i></a>
+        <a href=""><i id="settings-icon" class="fas fa-cog mx-2"></i></a>
+        <a href=""><i id="gallery-icon" class="fas fa-grip-horizontal mx-2"></i></a>
+        <a href=""><i id="user-icon" class="fas fa-user-circle mx-2"></i></a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class=" col-6 col-md-2 col-lg-2 d-md-block  sidebar collapse">
+                <div class="sidebar-sticky pt-3 ">
+                    <ul class="nav flex-column">
+                        <li class="nav-item menu-item">
+                            <button id="nuevo-boton" class="btn my-1 ml-1" type="submit"><i class="fas fa-plus mr-4 plus-icon"></i>NUEVO</button>
+                        </li>
+                        <li class="nav-item menu-item mt-1 mb-2">
+                            <a class="menu-item" href=""><i class="fas fa-hdd ml-2 mr-4"></i>Mi Unidad</a>
+                        </li>
+                        <li class="nav-item menu-item my-2">
+                            <a class="menu-item" href=""><i class="fas fa-clock ml-2 mr-4"></i>Reciente</a>
+                        </li>
+                        <li class="nav-item menu-item my-2">
+                            <a class="menu-item" href=""><i class="fas fa-star ml-2 mr-4"></i>Destacado</a>
+                        </li>
+                        <li class="nav-item menu-item my-2">
+                            <a class="menu-item" href=""><i class="fas fa-trash-alt ml-2 mr-4"></i>Papelera</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h2>Mi Unidad</h2>
+                <hr>
+                <h4>Proyectos</h4>
+                <div class="card w-50">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+</body>
+
+</html>

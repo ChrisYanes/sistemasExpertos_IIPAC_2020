@@ -14,7 +14,16 @@ body {
 }
 
 .navbar {
-    background-color: rgb(48, 19, 5);
+    background-color: #496B4A;
+}
+
+.logo,
+#logo-icon,
+#logo-text {
+    color: black !important;
+    height: auto;
+    width: 50px !important;
+    /* float: right; */
 }
 
 .navbar-brand {
@@ -59,12 +68,12 @@ body {
 }
 
 #second-navbar {
-    background-color: #496B4A;
+    background-color: rgb(48, 19, 5);
 }
 
 #footer {
     color: rgb(236, 239, 230);
-    background-color: rgb(48, 19, 5);
+    background-color: #496B4A;
 }
 
 .contenido {
