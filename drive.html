@@ -91,12 +91,15 @@
         }
         
         #sidebarMenu {
-            border-right: rgb(192, 190, 190) solid 2px !important;
             height: 100vh !important;
         }
         
+        .main-content {
+            border-left: rgb(192, 190, 190) solid 2px !important;
+        }
+        
         .plus-icon {
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-align: left;
         }
         
@@ -104,12 +107,12 @@
             width: 80%;
             background-color: white;
             color: black;
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-size: 1rem;
+            font-weight: 400;
             border: rgb(192, 190, 190) solid 1px;
             border-radius: 40px !important;
-            padding-left: 15px !important;
-            padding-right: 25px !important;
+            padding-left: 5px !important;
+            padding-right: 10px !important;
         }
         
         .menu-item {
@@ -122,6 +125,23 @@
         
         .menu-item:hover {
             text-decoration: underline #E93535 !important;
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+        
+        #footer {
+            color: rgb(236, 239, 230);
+            background-color: #496B4A;
+        }
+        
+        .card {
+            overflow: hidden;
+            -webkit-transition: all 0.30s ease;
+            -o-transition: all 0.30s ease;
+            transition: all 0.30s ease;
+        }
+        
+        .card:hover {
             -webkit-transform: scale(1.05);
             transform: scale(1.05);
         }
@@ -140,7 +160,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <nav id="sidebarMenu" class=" col-6 col-md-2 col-lg-2 d-md-block  sidebar collapse">
+            <nav id="sidebarMenu" class=" col-6 col-sm-6 col-md-2 col-lg-2 col-xl-2 d-md-block ">
                 <div class="sidebar-sticky pt-3 ">
                     <ul class="nav flex-column">
                         <li class="nav-item menu-item">
@@ -161,21 +181,55 @@
                     </ul>
                 </div>
             </nav>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <h2>Mi Unidad</h2>
+            <div class="main-content col-6 col-sm-6 col-md-10 col-lg-10 col-xl-10">
+                <h2 class="mt-3">Mi Unidad</h2>
                 <hr>
                 <h4>Proyectos</h4>
-                <div class="card w-50">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="row">
+                    <div class="card w-50 col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mx-3 my-2 mt-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card w-50 col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mx-3 my-2 mt-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card w-50 col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mx-3 my-2 mt-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card w-50 col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mx-3 my-2 mt-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card w-50 col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 mx-3 my-2 mt-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <!-- FOOTER -->
+    <nav class="navbar" id="footer">
+        <span class="navbar-brand mb-0 h1 mr-auto ml-auto" style="font-size: 16px !important;">&copy; DEVIACAT-editor 2020</span>
+    </nav>
 
     <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
