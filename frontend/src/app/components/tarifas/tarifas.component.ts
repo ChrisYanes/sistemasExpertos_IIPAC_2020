@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{faFileInvoiceDollar} from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-tarifas',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tarifas.component.css']
 })
 export class TarifasComponent implements OnInit {
+  faFileInvoiceDollar=faFileInvoiceDollar;
 
   constructor() { }
 

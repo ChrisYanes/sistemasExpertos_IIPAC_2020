@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SecondNavbarComponent } from './components/second-navbar/second-navbar.component';
@@ -15,6 +15,9 @@ import { InfoComponent } from './components/info/info.component';
 import { TarifasComponent } from './components/tarifas/tarifas.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { DriveComponent } from './components/drive/drive.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LandingInfoComponent } from './components/landing-info/landing-info.component';
+
 
 @NgModule({
   declarations: [
@@ -30,11 +33,14 @@ import { DriveComponent } from './components/drive/drive.component';
     InfoComponent,
     TarifasComponent,
     ServiciosComponent,
-    DriveComponent
+    DriveComponent,
+    LandingInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

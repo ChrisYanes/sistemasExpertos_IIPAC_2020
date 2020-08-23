@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SecondNavbarComponent } from './components/second-navbar/second-navbar.component';
@@ -12,16 +13,20 @@ import { InfoComponent } from './components/info/info.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { TarifasComponent } from './components/tarifas/tarifas.component';
 import { DriveComponent } from './components/drive/drive.component';
+import { LandingInfoComponent } from './components/landing-info/landing-info.component';
 
 const routes: Routes = [
   {
-    path: '', component:LandingComponent
+    path: '', component:LandingInfoComponent
   },
   {
     path: 'header', component:HeaderComponent
   },
   {
     path: 'secondNavbar', component:SecondNavbarComponent
+  },
+  {
+    path: 'principal', component:LandingInfoComponent
   },
   {
     path: 'info', component:InfoComponent

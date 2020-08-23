@@ -1,1 +1,19 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand logo col-md-3 col-lg-2 mr-0 px-3" id="logo-text" href="index.html"><img class="mr-2" id="logo-icon" src="../../../assets/images/logo.png" alt="">DEVIACAT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"><fa-icon id="hamburgueso" [icon]="faBars"></fa-icon></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="https://github.com/ChrisYanes/sistemasExpertos_IIPAC_2020" target="_blank">Descargar</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/registro">Regístrate</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/login">Inicia Sesión</a>
+            </li>
+        </ul>
+    </div>
+</nav>
