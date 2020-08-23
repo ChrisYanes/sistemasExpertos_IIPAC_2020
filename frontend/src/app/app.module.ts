@@ -17,6 +17,8 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { DriveComponent } from './components/drive/drive.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingInfoComponent } from './components/landing-info/landing-info.component';
+import {ReactiveFormsModule} from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { LandingInfoComponent } from './components/landing-info/landing-info.com
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

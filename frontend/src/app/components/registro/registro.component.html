@@ -1,22 +1,31 @@
-
-<form class="form-signin">
-    <a href="index.html"><img id="logo" class="mb-4" src="../../../assets/images/logog.png" alt="" ></a>
+<form [formGroup]="formularioRegistro" class="form-signin">
+    <a href="/"><img id="logo" class="mb-4" src="../../../assets/images/logog.png" alt=""></a>
     <h1 class="h3 mb-3 font-weight-normal" style="text-align: center !important;">Regístrate</h1>
-    <label for="inputName" class="sr-only">Nombre</label>
-    <input type="text" id="inputName" class="form-control" placeholder="Nombre" required autofocus>
-    <label for="inputLastName" class="sr-only">Apellido</label>
-    <input type="text" id="inputLastName" class="form-control" placeholder="Apellido" required autofocus>
-    <label for="inputEmail" class="sr-only">Correo Electrónico</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Correo Electrónico" required autofocus>
-    <label for="inputPassword" class="sr-only">Contraseña</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
-    <label for="inputDate" class="sr-only">Fecha de Nacimiento</label>
-    <input type="date" id="inputDate" class="form-control" placeholder="Fecha de Nacimiento" required autofocus>
+    <label for="inputName" class="sr-only">Nombre</label> Nombre:
+    <input [ngClass]="{'input-error':nombre.invalid && (nombre.dirty || nombre.touched)}" class="form-control" formControlName="nombre" type="text" placeholder="Nombre" required><br>
+    <div *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)" class="error">
+        <span *ngIf="nombre.errors.required">Error el campo es obligatorio</span>
+        <span *ngIf="nombre.errors.maxlength">Error el tamaño máximo es de 10 caracteres</span>
+    </div>
+    <label for="inputLastName" class="sr-only">Apellido</label> Apellido:
+    <input class="form-control" formControlName="apellido" type="text" placeholder="Apellido"><br>
+    <label for="inputEmail" class="sr-only">Correo Electrónico</label> Correo eletrónico:<input class="form-control" formControlName="email" type="email" placeholder="Correo Electrónico"><br>
+    <label for="inputPassword" class="sr-only">Contraseña</label> Contraseña: <input type="password" formControlName="password" class="form-control mb-2" placeholder="Contraseña" required>
+    <label for="inputDate" class="sr-only">Fecha de Nacimiento</label>Fecha de Nacimiento <br> Día:
+    <select class="form-control" formControlName="dia">
+      <option *ngFor="let dia of dias">{{dia}}</option>
+    </select> Mes:
+    <select class="form-control" formControlName="mes">
+      <option *ngFor="let mes of meses" [value]="mes.numeroMes">{{mes.nombreMes}}</option>
+    </select> Año:
+    <select class="form-control" formControlName="anio">
+      <option *ngFor="let anio of [2020,2019,2018,2017]" [value]="anio">{{anio}}</option>
+    </select><br>
     <div class="terminos">
         <label>
               <p>Al hacer clic en Regístrate, aceptas las Condiciones, la Política de datos y la Política de cookies.</p>
           </label>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">REGÍSTRATE</button>
+    <button [disabled]="!formularioRegistro.valid" type="button" (click)="guardar()" class="btn btn-lg btn-primary btn-block" routerLink="/">REGÍSTRATE</button>
     <p class="mt-5 mb-3 text-muted" style="text-align: center !important;">&copy; DEVIACAT-editor 2020</p>
 </form>
